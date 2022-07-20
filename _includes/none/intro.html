@@ -1,13 +1,38 @@
 <p>
-This course introduces genetic mapping using qtl2, a R package for analyzing quantitative
-phenotypes and genetic data from complex crosses like the Diversity Outbred (DO).
-Genetic mapping with qtl2 allows researchers in fields as diverse as medicine, evolution,
-and agriculture to identify specific chromosomal regions that contribute to variation in
-phenotypes (quantitative trait loci or QTL). The goal is to identify the action,
-interaction, number, and precise location of these regions. The course concludes with a
-complete analytical workflow from a study of DO mice. The lesson is adapted from
-<a href="http://kbroman.org/">Karl Broman's</a> <a href="http://kbroman.org/pages/software.html">software</a>,
-tutorials, and book co-authored with <a href="http://senresearch.org/">Saunak Sen</a>,
-<a href="http://www.rqtl.org/book/">A Guide to QTL Mapping with R/qtl</a>.
+This lesson will introduce you to the basics of gene expression analysis
+using RNA-Seq (short for RNA sequencing). Due to the considerable
+progress and constant decreasing costs of RNA-Seq, this technique has
+became a standard technique in biology.
+
+It is going to be fun and empowering! You will discover how total RNA
+are converted to short sequences called “reads” that can in turn be used
+to get insights into gene expression. Through careful experimental
+design, these gene expression information can yield new research avenues
+and answer crucial questions.
+
+We will use mostly R and its companion RStudio to perform our RNA-Seq
+analyses and visualisations.
+
+Depending on the level of participants, the bioinformatic part might be
+performed (QC of fastq files, genome alignment, counting, etc.). For
+this, we will use a Docker image containing all necessary datasets and
+softwares.
+
+After completing this lesson, you will be able to:
+
+- Indicate the reasons for doing an RNA-Seq experiment.
+- Identify good practices when designing a RNA-Seq experiment.
+- Memorize the steps of a complete RNA-Seq experiment: from sequencing to analysis.
+- Assess the quality of RNA-seq sequencing data (“reads”) using the command-line
+instructions in the cloud (Linux).
+- Align RNA-seq reads to a reference genome using a splice-aware aligner (e.g. STAR).
+- Generate a count matrix from the RNA-seq data alignment
+- Perform a QC of your experiment through Principal Component Analysis (PCA) and sample
+clustering.
+- Execute a differential gene expression analysis using R and the DESeq2 package.
+- Be able to create key plots: volcano plot, heatmap and clustering of differentially
+expressed genes.
+- Provide a biological interpretation to differentially expressed genes through ORA/GSEA
+analyses and data integration.
 </p>
 
